@@ -6,7 +6,9 @@
 </template>
 
 <script>
-import axios from 'axios';
+  import axios from 'axios';
+  baseurl = "http://127.0.0.1:8000"
+  baseurl = "https://cajero-app-unal.herokuapp.com/"
 export default {
   name: 'UserBalance',
   data: function () {
@@ -18,7 +20,7 @@ export default {
   created: function () {
     this.username = this.$route.params.username
     let self = this
-    axios.get("http://127.0.0.1:8000/user/balance/" + this.username)
+    axios.get(baseurl + "/user/balance/" + this.username)
       .then((result) => {
         self.balance = result.data.balance
       })
