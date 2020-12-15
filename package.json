@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "server-static": "^2.0.5",
     "vue": "^2.5.2",
     "vue-router": "^3.4.9"
   },
