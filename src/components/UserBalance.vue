@@ -7,18 +7,23 @@
 
 <script>
   import axios from 'axios';
-export default {
-  name: 'UserBalance',
-  data: function () {
-    return {
-      username: "",
-      balance: 0
-    }
+  url_real = [
+    "http://localhost:8000"
+    , "https://cajero-api-unal.herokuapp.com"
+  ];
+  selected = 1;
+  export default {
+  	name: 'UserBalance',
+  	data: function () {
+    	return {
+      		username: "",
+      		balance: 0
+    	}
   },
   created: function () {
     this.username = this.$route.params.username
     let self = this
-    axios.get("https://cajero-api-unal.herokuapp.com/user/balance/" + this.username)
+    axios.get(url_real[selected] + "/user/balance/" + this.username)
       .then((result) => {
         self.balance = result.data.balance
       })
