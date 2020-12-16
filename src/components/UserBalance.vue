@@ -7,11 +7,11 @@
 
 <script>
   import axios from 'axios';
-  url_real = [
+  let url_real = [
     "http://localhost:8000"
     , "https://cajero-api-unal.herokuapp.com"
   ];
-  selected = 1;
+  let selected = 1;
   export default {
   	name: 'UserBalance',
   	data: function () {
