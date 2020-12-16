@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\build",
-    "\\config",
     "\\src",
     "\\src\\assets",
     "\\src\\components"
   ],
-  "SelectedNode": "\\src\\components\\User.vue",
+  "SelectedNode": "\\src\\components\\UserBalance.vue",
   "PreviewInSolutionExplorer": false
 }
